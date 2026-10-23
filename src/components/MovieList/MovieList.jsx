@@ -1,8 +1,7 @@
 import './MovieList.scss';
-import moviesFromServer from '../../api/movies.json';
 import { MovieCard } from '../MovieCard/MovieCard';
 
-export const MovieList = ({ movies = moviesFromServer }) => {
+export const MovieList = ({ movies }) => {
   if (!movies || movies.length === 0) {
     return null;
   }
